@@ -1,6 +1,7 @@
 const { getReverseText } = require('../helpers/getReverseText');
+const { isPalindrome } = require('../helpers/isPalindrome');
 
-const getText = ( req, res ) => {
+const getText = (req, res) => {
 
     const textRequired = req.query.text;
 
@@ -9,7 +10,8 @@ const getText = ( req, res ) => {
         const textResponse = getReverseText(textRequired);
 
         res.status(200).json({
-           text: textResponse
+           text: textResponse,
+           palindrome: isPalindrome(textRequired)
         });
 
     } catch (error) {
