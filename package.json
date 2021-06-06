@@ -6,17 +6,20 @@
   "scripts": {
     "dev": "nodemon index.js",
     "prod": "start index.js",
-    "test": "standard"
+    "test": "mocha && standard"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.4",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
-    "nodemon": "^2.0.7"
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   },
   "devDependencies": {
     "standard": "^16.0.3"

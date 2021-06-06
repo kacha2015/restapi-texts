@@ -11,7 +11,7 @@ app.use(cors())
 // Public folder
 app.use( express.static('public') );
 
-// Parse body
+// Parser body
 app.use( express.json() );
 
 // Routes
