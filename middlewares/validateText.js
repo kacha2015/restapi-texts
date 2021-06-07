@@ -1,3 +1,6 @@
+/*
+    Middleware - Validate empty text
+*/
 
 const validateText = (req, res, next) => {
 

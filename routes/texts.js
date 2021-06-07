@@ -1,5 +1,5 @@
 /*
-    Event Routes
+    Texts Routes
     /iecho?text=
 */
 const { Router } = require('express');

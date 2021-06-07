@@ -1,4 +1,6 @@
-
+/*
+    Function - Return reverse text
+*/
 
 const getReverseText = ( value ) => {
 
